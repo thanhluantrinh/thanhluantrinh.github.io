@@ -1,10 +1,9 @@
 @import url("font-awesome.min.css");
 body {
   font-family: "Poppins", sans-serif;
-
-  background-color: #1c1c1c;
+  color: #0c0c0c;
+  background-color: #ffffff;
 }
-
 
 .layout_padding {
   padding-top: 90px;
@@ -107,7 +106,7 @@ body {
 }
 
 .hero_bg_box .img-box img {
-  min-width: 100%;
+  width: 100vw;
   min-height: 100%;
 }
 
@@ -119,7 +118,7 @@ body {
   width: 100%;
   height: 100%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.35)));
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.35));
+  background: transparent;
 }
 
 .sub_page .hero_area {
@@ -340,7 +339,7 @@ a:focus {
 }
 
 .slider_section .detail-box h1 span {
-  color: #f1db25;
+  color: #000000;
 }
 
 .slider_section .detail-box p {
@@ -446,6 +445,15 @@ a:focus {
           box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
   position: relative;
   margin-left: -45px;
+}
+
+.about_section .detail-box-right {
+  background-color: #ffffff;
+  padding: 25px 45px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+  position: relative;
+  margin-right: -45px;
 }
 
 .about_section .detail-box p {
@@ -621,41 +629,28 @@ a:focus {
 }
 
 .contact_section .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .contact_section .contact_form-container {
   margin-top: 35px;
 }
 
-.contact_section .contact_form-container input {
+.contact_section .contact_form-container input,
+.contact_section .contact_form-container textarea {
   border: none;
   outline: none;
   color: #000000;
-  height: 45px;
   width: 100%;
   margin: 15px 0;
   padding-left: 15px;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 
-.contact_section .contact_form-container input::-webkit-input-placeholder {
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.contact_section .contact_form-container input:-ms-input-placeholder {
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.contact_section .contact_form-container input::-ms-input-placeholder {
-  color: #000000;
-  text-transform: uppercase;
-}
-
+.contact_section .contact_form-container input::-webkit-input-placeholder,
+.contact_section .contact_form-container input:-ms-input-placeholder,
+.contact_section .contact_form-container input::-ms-input-placeholder,
 .contact_section .contact_form-container input::placeholder {
   color: #000000;
   text-transform: uppercase;
@@ -666,12 +661,8 @@ a:focus {
 }
 
 .contact_section .contact_form-container .btn-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 25px;
 }
 
@@ -680,7 +671,6 @@ a:focus {
   padding: 10px 60px;
   background-color: #f1db25;
   color: #ffffff;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid transparent;
   text-transform: uppercase;
@@ -691,6 +681,29 @@ a:focus {
   background-color: transparent;
   border-color: #f1db25;
   color: #f1db25;
+}
+
+.contact_section .contact_form-container textarea {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 100px;
+  box-sizing: border-box;
+}
+
+.contact_section .contact_form-container .checkbox-group {
+  margin-top: 10px;
+}
+
+.contact_section .contact_form-container .checkbox-group label {
+  display: inline-block;
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+
+.contact_section .contact_form-container .checkbox-group input[type="checkbox"] {
+  margin-right: 5px;
 }
 
 .contact_bg_box {
@@ -731,6 +744,7 @@ a:focus {
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.35)));
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.35));
 }
+
 
 /* end contact section */
 .team_section .box {
@@ -918,3 +932,31 @@ a:focus {
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
+.footer2 {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  width: 100%;
+  bottom: 0;
+  position: relative; /* Changed to relative */
+  flex-wrap: wrap;
+  
+}
+.footer2 img {
+  height: 50px;
+}
+.footer-links {
+  flex-direction: column; /* Stack links vertically */
+  align-items: center;
+}
+.footer2 a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.footer2 a:hover {
+  text-decoration: underline;
+}
