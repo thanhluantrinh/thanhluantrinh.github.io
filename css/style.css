@@ -464,7 +464,7 @@ a:focus {
   display: inline-block;
   padding: 10px 35px;
   background-color: #f1db25;
-  color: #ffffff;
+  color: #000000;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid transparent;
@@ -670,7 +670,7 @@ a:focus {
   display: inline-block;
   padding: 10px 60px;
   background-color: #f1db25;
-  color: #ffffff;
+  color: #000000;
   transition: all 0.3s;
   border: 1px solid transparent;
   text-transform: uppercase;
@@ -1003,4 +1003,53 @@ a:focus {
 
 .company-details ul li {
   margin: 5px 0;
+}
+
+/* About section 2 */
+.about_section2 {
+  width: 100%;
+  background-color: #757474;
+  padding: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.about_section2 .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_section2 .img_container .img-box img {
+  width: 100%;
+}
+
+.about_section2 .detail-box {
+  width: 100%;
+  position: relative;
+}
+
+.about_section2 .detail-box h3 {
+  margin-top: 10px;
+  color: white;
+}
+
+.about_section2 .detail-box h5 {
+  margin-top: 5px;
+  color: white;
+}
+
+.about_section2 .detail-box a {
+  display: inline-block;
+  padding: 10px 35px;
+  background-color: #f1db25;
+  color: #000000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+}
+
+.about_section2 .detail-box a:hover {
+  background-color: transparent;
+  border-color: #f1db25;
+  color: #f1db25;
 }
