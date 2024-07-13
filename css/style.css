@@ -195,7 +195,7 @@ body {
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 0;
   padding: 35px 15px 10px 15px;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   text-transform: uppercase;
   -webkit-transition: all .2s;
@@ -203,7 +203,7 @@ body {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  background-color: #1c1c1c;
+  background-color: #7771713a;
 }
 
 a,
@@ -959,4 +959,48 @@ a:focus {
 }
 .footer2 a:hover {
   text-decoration: underline;
+}
+
+/* Overview section*/
+.company-overview {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.company-overview h2 {
+  text-align: center;
+  color: #333;
+}
+
+.company-details {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.company-details p {
+  margin: 10px 0;
+}
+
+.company-details .label {
+  display: inline-block;
+  width: 200px;  /* Increase the width to create more space */
+  color: #555;
+}
+
+.company-details a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.company-details ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.company-details ul li {
+  margin: 5px 0;
 }
